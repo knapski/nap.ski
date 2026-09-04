@@ -1,6 +1,6 @@
 # NAP Consulting — nap.ski
 
-Premium static mockup homepage for **NAP Consulting** (medical device / management consulting). Under-construction aesthetic with live contact via nap@nap.ski.
+Premium static mockup homepage for **NAP Consulting** (medical device consulting — marketing, sales, and commercial readiness). Under-construction aesthetic with live contact via nap@nap.ski.
 
 ## Stack
 
@@ -43,4 +43,4 @@ Serves the built site locally (typically http://localhost:4173).
 - Logo: public/assets/logo.jpeg
 - Navigation and CTA links are intentionally inert except mailto:nap@nap.ski
 - Contact email only: nap@nap.ski — no personal names
-- Pittsburgh confluence SVG in src/components/PittsburghSkyline.tsx
+- Abstract skyline SVG in src/components/AbstractSkyline.tsx

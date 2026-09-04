@@ -14,8 +14,8 @@ export default function Footer() {
             className="mb-4 h-12 w-auto rounded-sm bg-white object-contain p-1"
           />
           <p className="text-sm leading-relaxed text-white/65">
-            Medical device and management consulting. Strategy, quality, and
-            commercialization — grounded in Pittsburgh.
+            Medical device consulting focused on marketing, sales, and
+            commercial readiness — from go-to-market strategy through launch.
           </p>
         </div>
 
@@ -47,7 +47,6 @@ export default function Footer() {
                   nap@nap.ski
                 </a>
               </li>
-              <li className="text-white/55">Pittsburgh, PA</li>
             </ul>
           </div>
         </div>

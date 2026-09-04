@@ -1,14 +1,14 @@
-/** Minimal geometric Pittsburgh confluence: bridges, Point State Park, three rivers. */
-export default function PittsburghSkyline({ className = "" }: { className?: string }) {
+/** Subtle abstract infrastructure / skyline motif — geometric bridges and skyline shapes. */
+export default function AbstractSkyline({ className = "" }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 800 320"
       className={className}
       role="img"
-      aria-label="Geometric outline of Pittsburgh skyline at the confluence of three rivers"
+      aria-label="Abstract geometric skyline and bridge motif"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Three rivers meeting at the Point */}
+      {/* Water / horizon bands */}
       <path
         d="M0 250 Q120 240 200 245 Q280 250 340 260 L400 280 Q420 290 400 300 Q300 310 180 305 Q80 300 0 290 Z"
         fill="currentColor"
@@ -25,7 +25,7 @@ export default function PittsburghSkyline({ className = "" }: { className?: stri
         opacity="0.08"
       />
 
-      {/* River outlines */}
+      {/* Horizon lines */}
       <path
         d="M0 255 Q150 245 280 255 Q340 262 380 275"
         fill="none"
@@ -48,7 +48,7 @@ export default function PittsburghSkyline({ className = "" }: { className?: stri
         opacity="0.35"
       />
 
-      {/* Point State Park fountain tip */}
+      {/* Focal marker */}
       <circle cx="400" cy="268" r="4" fill="currentColor" opacity="0.7" />
       <path
         d="M400 268 L400 248 M392 256 L408 256 M395 252 L405 252"
@@ -58,7 +58,7 @@ export default function PittsburghSkyline({ className = "" }: { className?: stri
         fill="none"
       />
 
-      {/* Roberto Clemente / 6th St Bridge (left of Point, arched) */}
+      {/* Arched bridge — left */}
       <path
         d="M220 210 Q280 175 340 210"
         fill="none"
@@ -75,7 +75,7 @@ export default function PittsburghSkyline({ className = "" }: { className?: stri
       />
       <line x1="220" y1="230" x2="340" y2="230" stroke="currentColor" strokeWidth="1.5" opacity="0.6" />
 
-      {/* Smithfield / Fort Pitt style bridge (right, yellow-bridge silhouette) */}
+      {/* Arched bridge — right */}
       <path
         d="M460 215 Q520 180 580 215"
         fill="none"
@@ -92,11 +92,10 @@ export default function PittsburghSkyline({ className = "" }: { className?: stri
       />
       <line x1="460" y1="235" x2="580" y2="235" stroke="currentColor" strokeWidth="1.5" opacity="0.6" />
 
-      {/* Downtown skyline blocks (north shore / golden triangle side) */}
-      {/* Building cluster left */}
+      {/* Skyline blocks — left cluster */}
       <rect x="250" y="140" width="28" height="70" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.75" />
       <rect x="282" y="110" width="36" height="100" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.8" />
-      {/* PPG-ish stepped tower */}
+      {/* Stepped tower */}
       <path
         d="M325 210 L325 95 L340 80 L355 95 L355 210 Z"
         fill="none"
@@ -106,9 +105,8 @@ export default function PittsburghSkyline({ className = "" }: { className?: stri
       />
       <rect x="360" y="130" width="24" height="80" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.7" />
 
-      {/* Center / Point-adjacent buildings */}
+      {/* Skyline blocks — right cluster */}
       <rect x="430" y="120" width="30" height="95" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.75" />
-      {/* US Steel tower-ish */}
       <rect x="465" y="85" width="34" height="130" fill="none" stroke="currentColor" strokeWidth="1.75" opacity="0.9" />
       <line x1="482" y1="85" x2="482" y2="70" stroke="currentColor" strokeWidth="1.5" opacity="0.7" />
       <rect x="505" y="145" width="22" height="70" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.7" />
@@ -121,7 +119,7 @@ export default function PittsburghSkyline({ className = "" }: { className?: stri
         opacity="0.75"
       />
 
-      {/* Ground / park shoreline */}
+      {/* Shoreline accent */}
       <path
         d="M200 230 Q300 220 400 240 Q500 225 600 235"
         fill="none"

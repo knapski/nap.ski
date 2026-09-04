@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import PittsburghSkyline from "./components/PittsburghSkyline";
+import AbstractSkyline from "./components/AbstractSkyline";
 import type { MouseEvent } from 'react';
 
 function deadClick(e: MouseEvent<HTMLAnchorElement>) {
@@ -9,29 +9,29 @@ function deadClick(e: MouseEvent<HTMLAnchorElement>) {
 
 const SERVICES = [
   {
-    title: "Regulatory Strategy",
-    body: "Pathway planning, submission readiness, and cross-functional alignment for medical devices navigating FDA and international frameworks.",
-    icon: (
-      <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6M7 4h10a2 2 0 012 2v14l-7-3-7 3V6a2 2 0 012-2z" />
-      </svg>
-    ),
-  },
-  {
-    title: "Quality Systems",
-    body: "QMS design and remediation, design controls, CAPA effectiveness, and audit-ready processes that scale with your organization.",
-    icon: (
-      <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
-  },
-  {
-    title: "Commercialization",
-    body: "Go-to-market strategy, market access considerations, and operational readiness from late development through launch.",
+    title: "Go-to-Market Strategy",
+    body: "Market positioning, messaging architecture, and launch sequencing that help medtech teams enter with clarity and commercial confidence.",
     icon: (
       <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22M21 21l-4.5-4.5" />
+      </svg>
+    ),
+  },
+  {
+    title: "Sales Enablement",
+    body: "Buyer-ready narratives, competitive positioning, and field tools that equip commercial teams to win accounts and accelerate pipeline.",
+    icon: (
+      <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+      </svg>
+    ),
+  },
+  {
+    title: "Launch & Market Access",
+    body: "Commercial readiness, market access messaging, and stakeholder engagement plans that turn product readiness into revenue traction.",
+    icon: (
+      <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
       </svg>
     ),
   },
@@ -80,12 +80,12 @@ export default function App() {
                 Medical device consulting
               </p>
               <h1 className="font-serif text-4xl leading-tight tracking-tight text-white sm:text-5xl lg:text-[3.25rem]">
-                Clarity from concept to commercialization
+                Commercial clarity from strategy to launch
               </h1>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
-                NAP Consulting partners with medtech teams on regulatory strategy,
-                quality systems, and launch readiness — precise guidance when
-                stakes and scrutiny are highest.
+                NAP Consulting partners with medtech teams on marketing, sales,
+                and commercial readiness — go-to-market strategy, sales
+                enablement, and launch messaging when revenue is on the line.
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-4">
                 <a
@@ -109,9 +109,9 @@ export default function App() {
 
             <div className="relative hidden lg:block">
               <div className="rounded-sm border border-white/10 bg-navy-light/80 p-6 shadow-2xl">
-                <PittsburghSkyline className="w-full text-white" />
+                <AbstractSkyline className="w-full text-white" />
                 <p className="mt-4 text-center text-xs tracking-widest text-white/40 uppercase">
-                  Pittsburgh · Three rivers
+                  Strategy · Enablement · Launch
                 </p>
               </div>
             </div>
@@ -129,8 +129,9 @@ export default function App() {
                 Where we add the most value
               </h2>
               <p className="mt-4 text-base leading-relaxed text-slate">
-                Focused engagements across the product lifecycle — pragmatic,
-                evidence-minded, and built for regulated environments.
+                Focused engagements across commercial strategy and go-to-market
+                execution — pragmatic, buyer-minded, and built for medtech
+                growth.
               </p>
             </div>
 
@@ -161,30 +162,30 @@ export default function App() {
           </div>
         </section>
 
-        {/* Pittsburgh / About */}
+        {/* About */}
         <section id="about" className="bg-white py-20 sm:py-24">
           <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-16">
             <div className="order-2 lg:order-1">
               <div className="rounded-sm border border-navy/10 bg-cream p-6 sm:p-8">
-                <PittsburghSkyline className="w-full text-navy" />
+                <AbstractSkyline className="w-full text-navy" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                Based in Pittsburgh
+                About NAP Consulting
               </p>
               <h2 className="mt-3 font-serif text-3xl tracking-tight text-navy sm:text-4xl">
-                At the confluence of industry and insight
+                Built for commercial momentum
               </h2>
               <p className="mt-5 text-base leading-relaxed text-slate">
-                From Point State Park to the Golden Triangle, Pittsburgh has long
-                been a place where rivers — and ideas — meet. NAP Consulting is
-                rooted here: a practical hub for medical device leaders who need
-                clear counsel without the noise.
+                NAP Consulting helps medical device organizations translate
+                product strength into market traction. We focus on how you
+                position, sell, and launch — so commercial teams move with
+                confidence.
               </p>
               <p className="mt-4 text-base leading-relaxed text-slate">
-                Bridges, skyline, and three rivers — a reminder that the best
-                paths forward are engineered with care.
+                From messaging architecture to sales enablement and launch
+                readiness, we bring practical counsel without the noise.
               </p>
               <a
                 href="#"
@@ -204,11 +205,12 @@ export default function App() {
               Insights
             </p>
             <h2 className="mt-3 font-serif text-2xl tracking-tight text-navy sm:text-3xl">
-              Perspectives on regulated product development
+              Perspectives on medtech commercial growth
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-slate">
               Articles and briefings will appear here as we launch. In the
-              meantime, reach out directly with questions about your program.
+              meantime, reach out directly with questions about your go-to-market
+              program.
             </p>
             <a
               href="#"
@@ -231,8 +233,8 @@ export default function App() {
               Ready when you are
             </h2>
             <p className="mx-auto mt-5 max-w-lg text-base leading-relaxed text-white/65">
-              Whether you are preparing a submission, strengthening a quality
-              system, or planning a launch — start the conversation.
+              Whether you are shaping a go-to-market plan, enabling the sales
+              team, or preparing for launch — start the conversation.
             </p>
             <a
               href="mailto:nap@nap.ski"
