@@ -11,7 +11,7 @@ export default function Footer() {
           <img
             src="/assets/logo.jpeg"
             alt="NAP Consulting"
-            className="mb-4 h-12 w-auto rounded-sm bg-white object-contain p-1"
+            className="mb-4 h-16 w-auto rounded-sm bg-white object-contain p-0.5"
           />
           <p className="text-sm leading-relaxed text-white/65">
             Medical device consulting focused on marketing, sales, and

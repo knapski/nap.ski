@@ -27,7 +27,7 @@ export default function Header() {
           <img
             src="/assets/logo.jpeg"
             alt="NAP Consulting"
-            className="h-11 w-auto rounded-sm bg-white object-contain p-1 sm:h-12"
+            className="h-14 w-auto rounded-sm bg-white object-contain p-0.5 sm:h-16"
           />
         </a>
 
