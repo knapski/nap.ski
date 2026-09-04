@@ -43,7 +43,7 @@ export default function App() {
       <Header />
 
       {/* Launch banner */}
-      <div className="border-b border-accent/20 bg-cream">
+      <div className="border-b border-navy/10 bg-banner">
         <div className="mx-auto flex max-w-6xl items-center justify-center gap-3 px-5 py-2.5 text-center sm:px-8">
           <span
             className="inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-accent"
